@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <style>
+        /* Project Styles */
+        .project {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .project .post {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project .post .image {
+            margin-bottom: 20px;
+        }
+
+        .project .post .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project .post .reference {
+            margin-top: auto;
+        }
+
+        /* Image Grid Styles */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* logo style */
+        .logo-container {
+            text-align: center; /* Center the content horizontally */
+        }
+
+        .reference img {
+            display: inline-block; /* Ensure the image behaves as an inline block */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        /* Text Columns */
+        .text-columns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .text-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+           
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About me</a></li>
+                <li class="active"><a href="generic.html">NBFI Vehicle Loan Default Prediction</a></li>
+                <li><a href="hotels.html">Hotel Cancellation Rates</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Project Section -->
+            <section class="project">
+                <!-- Project 1 -->
+                <article class="post">
+                    <header class="major">
+                        <span class="date">July, 2022</span>
+                        <h2>NBFI Vehicle Loan Default Prediction</h2>
+                    </header>
+                    <div class="image-grid">
+                        <img src="portfolio_images/1png" alt="Initial" />
+                        <img src="portfolio_images/2.png" alt="" />
+                        <img src="portfolio_images/3.png" alt="" />
+                        <img src="portfolio_images/4.png" alt="" />
+                    </div>
+                    <div class="text-columns">
+                        <div class="text-column">
+                            <p>In this project, we leverage various data analysis and machine learning techniques to build a predictive model for identifying potential loan defaults. The main goal is to develop an accurate and reliable model that can assist NBFI institutions in making informed lending decisions and managing risk effectively.</p>
+
+                            <p>This repository contains a machine learning project focused on predicting default on Non-Banking Financial Institution (NBFI) vehicle loans.</p>
+                        </div>
+                        <div class="text-column">
+                            <p>The dataset used in this project is sourced from a Kaggle competition: NBFI Vehicle Loan Repayment Dataset. It comprises various features related to loan applicants, including income, employment history, credit scores, and more.</p>
+                        </div>
+                    </div>
+                    <div class="text-columns">
+                        <div class="text-column">
+                            <p><strong>Key Contributions:</strong></p>
+                            <ul>
+                                <li><strong>Baseline Performance:</strong> Initiated the project by establishing a baseline predictive model, achieving an F1 score of approximately 0.13 for default prediction.</li>
+                                <li><strong>Model Improvements:</strong>
+                                    <ul>
+                                        <li><strong>Class Imbalance:</strong> Employed various techniques, such as oversampling and SMOTE, to address class imbalance in the dataset.</li>
+                                        <li><strong>Feature Selection:</strong> Identified key features, including client's employment, educational background, loan type, home ownership, age of the home, credit scores, and client's city rating, which significantly improved the model's predictive performance.</li>
+                                        <li><strong>Model Selection:</strong> Explored multiple machine learning algorithms, including logistic regression, decision trees, random forests, and neural networks, to identify the most suitable model for the task.</li>
+                                        <li><strong>Feature Significance Analysis:</strong> Utilized logistic regression analysis to determine the significance of features in predicting loan defaults.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logo-container">
+                        <a href="https://github.com/CernaMiguel/NBFI_Vehicle_Loan_Default_Prediction/blob/main/NBFI_Vehicle_Loan_Default_Prediction.ipynb" class="reference">
+                            <img src="portfolio_images/me.png" alt="Check it out" width="50" height="50">
+                        </a>
+                    </div>						
+                </article>
+                <!-- Add more projects as needed -->
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <footer id="copyright">
+            <ul>
+                <li>&copy; derivativeanalytics</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

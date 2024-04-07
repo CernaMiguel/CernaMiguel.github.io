@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Analysis</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <style>
+        /* Project Styles */
+        .project {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .text-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-column img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+           
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="generic.html">NBFI Vehicle Loan Default Prediction</a></li>
+                <li class="active"><a href="hotel_analysis.html">Hotel Booking Analysis</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Project Section -->
+            <section class="project">
+                <!-- Text Column -->
+                <div class="text-column">
+                    <article class="post">
+                        <header class="major">
+                            <span class="date">February, 2023</span>
+                            <h2>Hotel Booking Analysis</h2>
+                        </header>
+                        <p>This project involves analyzing hotel booking data to optimize pricing strategies and reduce cancellations. By identifying key variables affecting reservation cancellations, actionable insights are suggested that could lead to more efficient pricing and promotional decisions. Notably, logistic regression models and a Random Forest Classifier (RFC) were developed to enhance prediction accuracy.</p>
+                        <h3>Data Source</h3>
+                        <p>The dataset used for this analysis is the "Hotel Booking Demand" dataset from Kaggle.</p>
+                        <p>Dataset Link: <a href="https://www.kaggle.com/jessemostipak/hotel-booking-demand">Hotel Booking Demand Dataset</a></p>
+                        <h3>Data Preparation</h3>
+                        <ul>
+                            <li>Handled missing values and outliers.</li>
+                            <li>Cleaned and preprocessed the data for analysis.</li>
+                        </ul>
+                        <h3>Exploratory Analysis</h3>
+                        <ul>
+                            <li>Explored booking trends, seasonality, and customer demographics.</li>
+                            <li>Analyzed the relationship between booking cancellations and different features.</li>
+                        </ul>
+                        <h3>Feature Selection</h3>
+                        <ul>
+                            <li>Utilized a correlation matrix to identify relevant categorical features.</li>
+                            <li>Performed Ordinary Least Squares (OLS) Regression on numerical features to uncover correlations.</li>
+                        </ul>
+                        <h3>Predictive Modeling</h3>
+                        <ul>
+                            <li><strong>Random Forest Classifier</strong>
+                                <ul>
+                                    <li>Developed a Random Forest Classifier model for predicting cancellations.</li>
+                                    <li>Attempted hyperparameter tuning to improve accuracy.</li>
+                                    <li>Achieved an accuracy score of approximately 0.863 with cross-validation accuracy of 0.787.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Logistic Regression</strong>
+                                <ul>
+                                    <li>Built logistic regression models for predicting cancellations.</li>
+                                    <li>Achieved an accuracy score of 0.796 with a cross-validation accuracy of 0.787.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h3>Results and Insights</h3>
+                        <ul>
+                            <li>The Random Forest Classifier demonstrated competitive performance with an accuracy score of approximately 0.863 and cross-validation accuracy of 0.787.</li>
+                            <li>The Logistic Regression model achieved an accuracy score of 0.776 with cross-validation accuracy of 0.754.</li>
+                        </ul>
+                        <h3>Conclusion and Future Steps</h3>
+                        <p>In conclusion, this analysis sheds light on factors influencing hotel booking cancellations. While the Random Forest Classifier achieved promising results, further exploration of hyperparameter tuning and feature engineering may lead to improved accuracy. Future steps could also involve exploring ensemble methods and advanced techniques to further enhance model performance and interpretability.</p>
+                    </article>
+                </div>
+                <!-- Image Column -->
+                <div class="image-column">
+                    <img src="portfolio_images/adr1.png" alt="" height="1200" width="400"/>
+                    <img src="portfolio_images/adr2.png" alt="" height="1200" width="400"/>
+                    <img src="portfolio_images/reserve_status.png" alt="" height="1200" width="400"/>
+                    <img src="portfolio_images/reserve_status2.png.png" alt="" height="1200" width="400"/>
+                </div>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <footer id="copyright">
+            <ul>
+                <li>&copy; derivativeanalytics</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
