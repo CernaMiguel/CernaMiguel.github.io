@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Prediction Multiple Technique Comparison</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <style>
+        /* Project Styles */
+        .project {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .reference {
+            margin-top: auto;
+            text-align: center;
+        }
+
+        .reference a {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .text {
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+           
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="generic.html">NBFI Vehicle Loan Default Prediction</a></li>
+                <li><a href="hotels.html">Hotel Booking Analysis</a></li>
+                <li class="active"><a href="multi techniques.html">Default Prediction Multiple Technique Comparison</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Project Section -->
+            <section class="project">
+                <!-- Image Grid -->
+                <div class="post">
+                    <header class="major">
+                        <span class="date">September, 2022</span>
+                        <h2>Default Prediction Multiple Technique Comparison</h2>
+                    </header>
+                    <div class="image-grid">
+                        <div class="image-container">
+                            <img src="portfolio_images/mult_technique/1.png" alt="" />
+                        </div>
+                        <div class="image-container">
+                            <img src="portfolio_images/mult_technique/2.png" alt="" />
+                        </div>
+                        <div class="image-container">
+                            <img src="portfolio_images/mult_technique/3.png" alt="" />
+                        </div>
+                    </div>
+                    
+                    <div class="text">
+                        <p>This project aims to build and evaluate various machine learning classifiers to predict credit risk. The dataset used contains information about customers, including their income, loan amount, credit score, and other relevant features, as well as a binary target variable indicating whether a customer is likely to default on a loan.</p>
+                        <h3>Overview</h3>
+                        <p>This project aims to build and evaluate various machine learning classifiers to predict credit risk. The dataset used contains information about customers, including their income, loan amount, credit score, and other relevant features, as well as a binary target variable indicating whether a customer is likely to default on a loan (1 for default, 0 for non-default).</p>
+                        <h3>Dataset</h3>
+                        <p>The dataset for this project can be found on Kaggle: <a href="https://www.kaggle.com/jessemostipak/hotel-booking-demand">Loan Default Dataset</a>.</p>
+                        <h3>Data Preprocessing</h3>
+                        <ul>
+                            <li>The dataset was loaded and preprocessed to handle missing values and categorical variables.</li>
+                            <li>Standardization (scaling) was applied to ensure consistent data ranges across features.</li>
+                        </ul>
+                        <h3>Handling Class Imbalance</h3>
+                        <ul>
+                            <li>The target variable showed a significant class imbalance, with a majority of non-default cases.</li>
+                            <li>Synthetic Minority Over-sampling Technique (SMOTE) was employed to balance the dataset, creating synthetic instances of the minority class.</li>
+                        </ul>
+                        <h3>Model Selection and Evaluation</h3>
+                        <ul>
+                            <li>Seven different classifiers were selected for the project:</li>
+                            <ul>
+                                <li>Decision Tree</li>
+                                <li>Random Forest</li>
+                                <li>Support Vector Machine (SVM)</li>
+                                <li>k-Nearest Neighbors (k-NN)</li>
+                                <li>Naive Bayes</li>
+                                <li>XGBoost</li>
+                                <li>Nearest Centroid</li>
+                            </ul>
+                            <li>Model performance was evaluated using various metrics, including accuracy, F1 score, precision, recall, and ROC AUC.</li>
+                            <li>Cross-validation was employed to assess each classifier's performance robustly.</li>
+                        </ul>
+                        <h3>Results</h3>
+                        <p>Here are the evaluation results for each classifier:</p>
+                        <table>
+                            <tr>
+                                <th>Classifier</th>
+                                <th>Accuracy</th>
+                                <th>F1 Score</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>ROC AUC</th>
+                            </tr>
+                            <tr>
+                                <td>Decision Tree</td>
+                                <td>0.8201</td>
+                                <td>0.8225</td>
+                                <td>0.8016</td>
+                                <td>0.8486</td>
+                                <td>0.8201</td>
+                            </tr>
+                            <tr>
+                                <td>Random Forest</td>
+                                <td>0.8886</td>
+                                <td>0.8847</td>
+                                <td>0.8810</td>
+                                <td>0.8954</td>
+                                <td>0.9587</td>
+                            </tr>
+                            <tr>
+                                <td>SVM</td>
+                                <td>0.7056</td>
+                                <td>0.7158</td>
+                                <td>0.6912</td>
+                                <td>0.7425</td>
+                                <td>0.7809</td>
+                            </tr>
+                            <tr>
+                                <td>k-NN</td>
+                                <td>0.8163</td>
+                                <td>0.8412</td>
+                                <td>0.7407</td>
+                                <td>0.9734</td>
+                                <td>0.9129</td>
+                            </tr>
+                            <tr>
+                                <td>Naive Bayes</td>
+                                <td>0.7511</td>
+                                <td>0.7562</td>
+                                <td>0.7354</td>
+                                <td>0.7809</td>
+                                <td>0.8328</td>
+                            </tr>
+                            <tr>
+                                <td>XGBoost</td>
+                                <td>0.8973</td>
+                                <td>0.8888</td>
+                                <td>0.8985</td>
+                                <td>0.8947</td>
+                                <td>0.9664</td>
+                            </tr>
+                        </table>
+                        <h3>Conclusion</h3>
+                        <p>The Random Forest and XGBoost classifiers outperformed other models across multiple evaluation metrics. These models demonstrated higher accuracy, F1 score, precision, and ROC AUC, making them suitable candidates for credit risk prediction tasks. Additionally, the use of SMOTE to address class imbalance improved the model's performance in handling default cases.</p>
+                    </div>
+                    <div class="reference">
+                        <a href="https://github.com/CernaMiguel/Analysis-of-Elevated-Cancellation-Rates-among-Hotel-booking-data/blob/main/Analysis%20of%20Elevated%20Cancellation%20Rates%20among%20Hotel's%20booking%20data.ipynb">
+                            <img src="portfolio_images/final_logo.png" alt="Check it out" width="150" height="150">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <footer id="copyright">
+            <ul>
+                <li>&copy; derivativeanalytics</li>
+                <li> <img src="portfolio_images/final_logo2.png" alt="" width="100" height="50"></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
